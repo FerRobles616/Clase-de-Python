@@ -9,7 +9,7 @@ def llamarServicioSet():
     ci= request.json.get('ci')
     print("ci enviado:", ci)
 
-    codRes, menRes, accion, = inicializarVariables(ci)
+    codRes, menRes, accion = inicializarVariables(ci)
 
     salida = {
         'codRes': codRes,
